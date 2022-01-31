@@ -1,0 +1,10 @@
+{
+    "database": "dj/dbpedia",
+    "query": "select ?Disease ?deaths \nwhere {\n  ?Disease <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Disease> . \n  ?Disease <http://dbpedia.org/property/deaths> ?deaths\n}\norder by desc(?deaths)\nlimit 10",
+    "ID": "mostDeadly",
+    "roles": [
+        "admin",
+        "authenticated"
+    ],
+    "type": "read"
+}

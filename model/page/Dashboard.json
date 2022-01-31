@@ -1,0 +1,31 @@
+{
+    "ID": "Dashboard",
+    "layout": {
+        "widget": "page",
+        "pageLayout": "grid",
+        "children": [
+            {
+                "widget": "table",
+                "text": "New Widget",
+                "x": 0,
+                "y": 0,
+                "rows": 1,
+                "cols": 1,
+                "query": "mostDeadly",
+                "database": "dbpedia",
+                "title": "Most Deadly Deseases"
+            },
+            {
+                "widget": "chart",
+                "title": "Most Deadly Deseases",
+                "query": "mostDeadly",
+                "database": "dbpedia",
+                "chart": "doughnut",
+                "x": 1,
+                "y": 0,
+                "rows": 1,
+                "cols": 1
+            }
+        ]
+    }
+}

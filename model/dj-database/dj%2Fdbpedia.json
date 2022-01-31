@@ -1,0 +1,32 @@
+{
+    "djClassName": "org.dashjoin.service.RemoteDatabase",
+    "ID": "dj/dbpedia",
+    "url": "http://localhost:8082/database",
+    "name": "dbpedia",
+    "readRoles": [
+        "authenticated"
+    ],
+    "tables": {
+        "http://dbpedia.org/ontology/Disease": {
+            "instanceLayout": {
+                "widget": "page",
+                "children": [
+                    {
+                        "widget": "edit",
+                        "title": "Edit Record",
+                        "deleteConfirmation": "Are you sure you want to delete this record?"
+                    },
+                    {
+                        "widget": "links",
+                        "title": "Related Records"
+                    },
+                    {
+                        "widget": "display",
+                        "text": "custom instance layout",
+                        "display": "{\"img\": value.\"http://dbpedia.org/ontology/thumbnail\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

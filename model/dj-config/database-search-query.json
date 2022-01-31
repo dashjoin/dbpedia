@@ -1,0 +1,6 @@
+{
+    "ID": "database-search-query",
+    "map": {
+        "dbpedia": "search"
+    }
+}

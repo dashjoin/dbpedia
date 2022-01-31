@@ -1,0 +1,13 @@
+@prefix dbpedia: <http://dbpedia.org/ontology/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+dbpedia:Drug                a rdfs:Class .
+dbpedia:Disease             a rdfs:Class .
+dbpedia:ChemicalCompound    a rdfs:Class .
+dbpedia:ChemicalSubstance   a rdfs:Class .
+<http://umbel.org/umbel/rc/AilmentCondition> a rdfs:Class .
+
+dbpedia:symptom             rdfs:domain     dbpedia:Disease .
+dbpedia:symptom             rdfs:range      dbpedia:Disease .
+

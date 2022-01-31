@@ -1,0 +1,16 @@
+{
+    "ID": "search",
+    "type": "read",
+    "roles": [
+        "admin",
+        "authenticated"
+    ],
+    "database": "dj/dbpedia",
+    "query": "select ?ID where { ?ID a <http://dbpedia.org/ontology/Disease> . ?ID <http://www.w3.org/2000/01/rdf-schema#label> ${search}@en }",
+    "arguments": {
+        "search": {
+            "type": "string",
+            "sample": "Measles"
+        }
+    }
+}

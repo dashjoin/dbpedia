@@ -16,14 +16,15 @@ docker run
   dashjoin/platform
 ```
 
-The RDF microservice connects to DBpedia. We also configure an ontology file that targets a specific use case:
+The RDF microservice connects to DBpedia. We also configure an ontology file that targets a specific use case (download https://raw.githubusercontent.com/dashjoin/dbpedia/main/dbpedia.n3):
 
 ```
 docker run 
   -p 8082:8082 
   -e DASHJOIN_DATABASE_MODE=client 
   -e DASHJOIN_DATABASE_ENDPOINT=https://dbpedia.org/sparql 
-  -e DASHJOIN_DATABASE_ONTOLOGIES=https://github.com/dashjoin/dbpedia/blob/main/dbpedia.n3
+  -e DASHJOIN_DATABASE_ONTOLOGIES=upload/dbpedia.n3
+  -v /absolute path to/dbpedia.n3:/deployments/upload/dbpedia.n3
   dashjoin/rdf4j
 ```
 

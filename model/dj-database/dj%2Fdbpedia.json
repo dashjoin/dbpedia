@@ -1,7 +1,7 @@
 {
     "djClassName": "org.dashjoin.service.RemoteDatabase",
     "ID": "dj/dbpedia",
-    "url": "http://localhost:8082/database",
+    "url": "http://host.docker.internal:8082/database",
     "name": "dbpedia",
     "readRoles": [
         "authenticated"
